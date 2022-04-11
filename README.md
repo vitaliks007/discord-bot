@@ -9,6 +9,7 @@
 ## Зависимости
 
 - Python 3.x
+  - hikari
   - pandas
   - bs4
   - mysql-connector-python
