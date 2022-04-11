@@ -20,5 +20,10 @@ class schedule_url_dao:
 
     def add_row(self, url, institute, course):
         cursor = self.connection.cursor()
-        cursor.execute("INSERT urls(url, institute, course)"
-                       "VALUES ('" + url + "', '" + institute + "', " + course + ");")
+        cursor.execute('CREATE TABLE IF NOT EXISTS schedule_url.urls ('
+                       'url VARCHAR(200) NOT NULL, '
+                       'institute VARCHAR(100) NOT NULL, '
+                       'course INT UNSIGNED NOT NULL, UNIQUE INDEX id_UNIQUE (url ASC) VISIBLE, PRIMARY KEY (url)) '
+                       'ENGINE = InnoDB;'
+                       'INSERT urls(url, institute, course)'
+                       'VALUES ('" + url + "', '" + institute + "', " + course + ");')
