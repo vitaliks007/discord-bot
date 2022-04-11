@@ -9,5 +9,5 @@ class url_html_parser:
         self.soup = BeautifulSoup(resp.text, 'html.parser')
 
     def get_url_by_name(self, institute, course):
-        url = self.soup.find('a', href=re.compile(f".*({institute}_{course}к).*")).get('href')
+        url = self.soup.find('a', href=re.compile(f".*({institute}_{course}).*")).get('href')
         return url
