@@ -1,4 +1,4 @@
 /.idea/
 /mirea-schedule/config.ini
-/schedule.iml
+/*.iml
 /venv/
