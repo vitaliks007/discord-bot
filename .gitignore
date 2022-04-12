@@ -1,4 +1,6 @@
 /.idea/
+/dist/
+/*.egg-info
 /mirea-schedule/config.ini
 /*.iml
 /venv/

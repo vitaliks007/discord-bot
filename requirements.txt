@@ -1,0 +1,6 @@
+bs4
+hikari
+mysql-connector-python
+pandas
+requests
+wget
