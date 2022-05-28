@@ -18,15 +18,3 @@ class url_html_parser:
                           text='\n											    %d курс'
                                '											' % course) is not None):
                 return root.find('a').get('href')
-
-
-        # divs = root.find_all('a', href=re.compile('.*(^((?!экз).)*$).*'))
-        # for el in divs:
-        #     pre_root = el.find('div',
-        #                        text='\n											    %d курс'
-        #                             '											' % course)
-        #     if pre_root is not None:
-        #         root = pre_root
-        # root = BeautifulSoup(root, 'html.parser')
-        # url = root.parent.parent.get('href')
-        # return url
