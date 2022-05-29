@@ -49,5 +49,5 @@ class schedule_url_service:
 sc = schedule_url_service()
 sc.fill_table_institutes()
 sc.fill_table_urls()
-sc.download_by_group("ИКБО", 1)
+sc.download_by_group("ИВБО", 2)
 sc.disconnect()
